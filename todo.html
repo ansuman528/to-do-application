@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css" type="text/css">
+    <title>To-do application</title>
+    <script src="todo.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>To-do application</h1>
+    </div>
+    <div class="interface">
+        <div class="inter">
+            <h3 style="text-align: center;">Set Your schedules</h3>
+            <form name="myform" onsubmit="return main()">
+                <label for="date">Enter Date:</label>
+                <input type="date" name="date" required>
+                <label for="time">Enter time:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="Description">Description:</label>
+                <input type="text" id="des" name="des" required>
+                <div class="button_slide slide_diagonal" style="text-align: center;padding: 10px;">
+                    <input type="submit" value="Add to List">
+                </div>
+              </form>
+        </div>
+        <div class="interr" id="interr">
+            <h3 style="text-align: center;">Your schedules</h3>
+        </div>
+    </div>
+</body>
+
+</html>
